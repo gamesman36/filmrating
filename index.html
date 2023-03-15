@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: khaki;
+            font-family: verdana;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #headline {
+            background-color: darkgray;
+            color: black;
+            margin: 0 auto;
+            text-align: center;
+            border: 5px solid darkblue;
+            font-weight: bold;
+            font-size: 32px;
+            padding: 15px;
+            width: 240px;
+        }
+
+        #menu {
+            margin: 15px auto;
+        }
+
+        #films {
+            border: 5px solid darkblue;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="headline">
+            Filmrating
+        </div>
+        <div id="menu">
+            <select id="selection">
+                <option value="alle">Alle</option>
+                <option value="action">Action</option>
+                <option value="action">Romanse</option>
+                <option value="action">Thriller</option>
+            </select>
+            <button>Vis filmer</button>
+        </div>
+        <div id="films">
+
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
