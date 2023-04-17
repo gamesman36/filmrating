@@ -1,0 +1,30 @@
+body {
+    background-color: khaki;
+    font-family: verdana;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#headline {
+    background-color: darkgray;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid darkblue;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 15px;
+    width: 240px;
+}
+
+#menu {
+    margin: 15px auto;
+}
+
+#films {
+    border: 5px solid darkblue;
+    height: 400px;
+}
