@@ -6,7 +6,7 @@ function view() {
     let html = /* html */`
     <div id="container">
         <div id="headline">
-            Filmrating
+            Rating films
         </div>
         <div id="menu">
             <select id="selection">
