@@ -12,7 +12,7 @@ function view() {
             <select id="selection">
                 ${createOptionsHTML()};
             </select>
-            <button onclick="showFilms()">Vis filmer</button>
+            <button onclick="showFilms()">Show films</button>
         </div>
         <div id="films">
 
