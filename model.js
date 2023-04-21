@@ -4,12 +4,22 @@ const model = {
     },
 
     inputs: {
-        categories: {
-            choice: null,
+        mainPage: {
+            categories: {
+                choice: null,
+            },
+            films: {
+                choice: null,
+            },
+            clicked: {
+                showFilmsClicked: false,
+            },
         },
-        films: {
-            title: null,
-            rating: null,
+        filmPage: {
+            films: {
+                choice: null,
+                rating: null,
+            },
         },
     },
 
@@ -51,4 +61,5 @@ const model = {
             },
         ],
     },
+
 };
