@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: "startPage",
+        currentPage: "mainPage",
     },
 
     inputs: {

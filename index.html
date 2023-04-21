@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="model.js"></script>
+    <script src="mainPageView.js"></script>
+    <script src="filmPageView.js"></script>
+    <script src="controller.js"></script>
 </head>
 <body>
-    <div id="app">
-
-    </div>
-    
-    <script src="model.js"></script>
-    <script src="view.js"></script>
-    <script src="controller.js"></script>
+    <div id="app"></div>
+    <script>
+        view();
+        function view() {
+            if (model.app.currentPage == "mainPage") viewMainPage();
+            if (model.app.currentPage == "filmPage") viewFilmPage();
+        }
+    </script>
 </body>
 </html>

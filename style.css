@@ -20,6 +20,6 @@ body {
     width: 240px;
 }
 
-#menu {
+#menu, #details {
     margin: 15px auto;
 }
