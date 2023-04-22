@@ -39,7 +39,7 @@ const model = {
                 summary: `A former San Francisco police detective juggles wrestling with his personal 
                 demons and becoming obsessed with the hauntingly beautiful woman he has been hired 
                 to trail, who may be deeply disturbed.`,
-                rating: null,
+                rating: "",
             },
             {
                 title: "Breakfast at Tiffany's",
@@ -48,7 +48,7 @@ const model = {
                 category: "Romance",
                 summary: `A young New York socialite becomes interested in a young man who has moved into 
                 her apartment building, but her past threatens to get in the way.`,
-                rating: null,
+                rating: "",
             },
             {
                 title: "Seven Samurai",
@@ -57,7 +57,7 @@ const model = {
                 category: "Action",
                 summary: `Farmers from a village exploited by bandits hire a veteran samurai for protection, 
                 who gathers six other samurai to join him.`,
-                rating: null,
+                rating: "",
             },
         ],
     },

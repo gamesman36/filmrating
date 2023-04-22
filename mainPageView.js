@@ -6,6 +6,10 @@ function viewMainPage() {
         <div id="headline">
             Rating films
         </div>
+        <div id="info">
+            1. Make your choice from the dropdown menu.<br />
+            2. Click on a film title to rate it!
+        </div>
         <div id="menu">
             <select id="selection" onchange="model.inputs.mainPage.categories.choice=this.value">
                 ${createOptionsHTML()}
@@ -50,25 +54,25 @@ function showFilms() {
     switch (choice) {
         case "All":
             for (let x of model.data.films) {
-                html += `<p onclick="chooseFilm(this.innerText)">${x.title}</p>`;
+                html += `<p onclick="chooseFilm(this.innerText)"><b>${x.title}</b></p>`;
             }
             break;
         case "Action":
             films = filterByCategory("Action");
             for (let x of films) {
-                html += `<p onclick="chooseFilm(this.innerText)">${x.title}</p>`;
+                html += `<p onclick="chooseFilm(this.innerText)"><b>${x.title}</b></p>`;
             }
             break;
         case "Romance":
             films = filterByCategory("Romance");
             for (let x of films) {
-                html += `<p onclick="chooseFilm(this.innerText)">${x.title}</p>`;
+                html += `<p onclick="chooseFilm(this.innerText)"><b>${x.title}</b></p>`;
             }
             break;
         case "Thriller":
             films = filterByCategory("Thriller");
             for (let x of films) {
-                html += `<p onclick="chooseFilm(this.innerText)">${x.title}</p>`;
+                html += `<p onclick="chooseFilm(this.innerText)"><b>${x.title}</b></p>`;
             }
             break;
     }

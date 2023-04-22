@@ -20,6 +20,11 @@ body {
     width: 240px;
 }
 
+#info {
+    margin-top: 10px;
+    text-align: center;
+}
+
 #menu, #details {
     margin: 15px auto;
 }

@@ -19,19 +19,23 @@ function chooseFilm(film) {
 
 function rateFilm(ratingToSet) {
     let filmToRate = model.inputs.mainPage.films.choice;
+    model.inputs.filmPage.films.rating = ratingToSet;
+    let filmList = [];
 
-    for(let x of model.data.films) {
-        if(x.title == filmToRate) {
-            x.rating = ratingToSet;
-        }
+    for (let x of model.data.films) {
+        filmList.push(x.title);
     }
 
-    model.inputs.filmPage.films.rating = ratingToSet;
+    let foundIndex = filmList.findIndex(x => x == filmToRate);
+
+    model.data.films[foundIndex].rating = ratingToSet;
+
     view();
 }
 
 function goBackToMain() {
     model.app.currentPage = "mainPage";
     model.inputs.mainPage.clicked.showFilmsClicked = false;
+    model.inputs.filmPage.films.rating = "";
     view();
 }
